@@ -1,0 +1,293 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{adjustbox}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Guewen}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Baconnier}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Software Developer / Architect} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{10}{Chemin des Covets 13,} \\
+  % \adjustbox{padding*=22 0 0 0}{1350 Orbe, CH} \\
+  \icon{MapMarker}{10}{1350 Orbe, CH} \\
+	\icon{Phone}{10}{+41 79 708 24 86}\\
+	\icon{At}{10}{\href{mailto:guewen@gmail.com}{guewen@gmail.com}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Globe}{10}{\href{https://guewen.github.io}{guewen.github.io}}\\
+	\icon{Github}{10}{\href{https://github.com/guewen}{github.com/guewen}}\\
+	\icon{Twitter}{10}{\href{https://twitter.com/guewenb}{@guewenb}}\\
+	\icon{Linkedin}{10}{\href{https://www.linkedin.com/in/guewenb}{linkedin.com/in/guewenb}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.42\textwidth} % 50% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+  {A software developer, with an appetite for Open Source, and has learned to
+  work in such environment. Creative-minded, curious, eager to learn and
+  experiment, I am a key element when it comes to innovate. I have a natural
+  ability to understand the big picture and at the same time to focus on
+  making the details right. }
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.42\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+  {Software Architecture, Development, Business Applications,
+    CI, Performance Optimizations, Open Source, Databases,
+    Web Services}\\
+
+  \begin{center}
+    \bubbles{1/, 2/, 3/, 2/, 1/}
+  \end{center}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{3/2019 -- Now}
+		{Software Architect}
+		{Camptocamp}
+		{Analysis and estimations. Specifications for development tasks. Mentoring.
+      Most of my work during this period has been as lead architect and
+      developer on a Warehouse Management System \& Supply Chain Application for
+      Odoo, allowing to work in large warehouses.
+      \\
+      \texttt{Python}\slashsep\texttt{JS}\slashsep\texttt{Docker}\slashsep\texttt{PostgreSQL}}
+	\entry
+		{9/2017 -- 3/2019}
+		{Manager of Developers}
+		{Camptocamp}
+		{Servant leader for developers, coordination and organizations of the teams
+      (\textasciitilde{}15 developers). Taking care of recruitment, 1:1 with people and taking
+      care of them and the production of the teams. Introduction of improvements
+      such as a mentoring system.
+      \\
+      \texttt{Mentorship}\slashsep\texttt{Communication}\slashsep\texttt{Organization}}
+	\entry
+		{2015 -- Now}
+		{Technical Lead}
+		{Camptocamp}
+		{Involved in the technical decisions of the department.
+      \\ \texttt{Integrity}\slashsep\texttt{Listening}\slashsep\texttt{Big Picture}\slashsep\texttt{Decisiveness}}
+	\entry
+		{2013 -- Now}
+		{OCA Core Maintainer, Contributor, Delegate}
+		{Odoo Community Association}
+		{Elected as Delegate member of the association, core maintainer.
+      Involves an active participation in the projects, including
+      reviews, maintenance, support on reported issues, mailing lists. \\
+      \texttt{Python}\slashsep\texttt{Odoo}\slashsep\texttt{Community}\slashsep\texttt{Open Source}}
+	\entry
+		{2010 -- Now}
+		{Software Developer}
+		{Camptocamp}
+		{Implementation of Odoo (Python Open Source ERP) in companies.\\
+      Various range of activities, from analysis, development, code reviews, to deployment.
+      Highlights (small selection): \\
+      Data migration tool in Ruby; Implementation of Odoo for a renowned Swiss
+      e-commerce company with custom connector; Mobile application (iOS/Android)
+      in Javascript (Ionic/Angular) for Lausanne's Police; Building of an
+      internal SaaS platform to deploy Odoo projects with Docker, including CI;
+      Large performance optimizations with analysis in PostgreSQL/Python. \\
+      \texttt{Python}\slashsep\texttt{Odoo}\slashsep\texttt{PostgreSQL}\slashsep\texttt{JS}\slashsep\texttt{Ruby}}
+	\entry
+		{2007 -- 2010}
+		{Software Developer \& Architect}
+		{SAGE S.A.}
+		{Mission at Nespresso on their ERP software. Some achievements:\\
+      An advanced rule engine allowing users to compose complex
+      marketing rules; SOAP interface in PL/SQL for payment gateways and
+      implementation of payments respecting the PCI-SSC rules; SOAP services
+      between the e-commerce Shop and the ERP. \\
+      \texttt{Oracle DB}\slashsep\texttt{PL/SQL}\slashsep\texttt{Adobe Flex}}
+	\entry
+		{2006 -- 2007}
+		{Software Developer}
+		{SAGE S.A.}
+		{Delegation missions in private banking. Development of Banking software and
+      data migration.\\
+      \texttt{Oracle DB}\slashsep\texttt{PLSQL}}
+	\entry
+		{2002 -- 2003\\\footnotesize{5 months internship}}
+		{Web Developer}
+		{Omicron Web Services SA}
+		{Conception and implementation of an e-commerce shop \\
+      \texttt{HTML}\slashsep\texttt{ColdFusion}\slashsep\texttt{JS}\slashsep\texttt{CSS}}
+	\entry
+		{2002\\\footnotesize{7 months internship}}
+		{IT intern}
+		{Nestlé Product Technology Center, Orbe}
+		{Helpdesk, Web and Software Development \\
+      \texttt{ASP}\slashsep\texttt{VB}\slashsep\texttt{HTML}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Open Source Projects
+%----------------------------------------------------------------------------------------
+
+\cvsect{Open Source Projects}
+
+{A small selection of public projects I initially authored, which now have their
+  communities around the world.}\\
+
+\begin{entrylist}
+	\entry
+		{2013-Now}
+		{Odoo Queue Job}
+		{\href{https://github.com/oca/queue}{github.com/oca/queue}}
+		{A job queue for Odoo. As the time of writing, more than 50
+      people have contributed to the project. Used as a basis for many 
+      Odoo addons and one of the most used addon worldwide.\\
+      \texttt{Odoo}\slashsep\texttt{Python}
+    }
+
+	\entry
+		{2016-Now}
+		{Pytest Odoo}
+		{\href{https://github.com/camptocamp/pytest-odoo}{github.com/camptocamp/pytest-odoo}}
+		{Pytest is a famous tests runner for Python. Running tests is Odoo is known
+      to be slow and tedious. I wrote this extension for pytest which allow to
+      run tests selectively and incredibly fast. Reported to me by many devs as
+      a lifesaver.\\
+      \texttt{Odoo}\slashsep\texttt{Python}
+    }
+	\entry
+		{2017-Now}
+		{Odoo Components}
+		{\href{https://github.com/OCA/connector/tree/13.0/component}{github.com/oca/connector}}
+		{An Odoo addon allowing developers to provide abstract building blocks for
+      many usages. Contributors built great and unexpected extensions based on
+      this, e.g. for a REST server.\\
+      \texttt{Odoo}\slashsep\texttt{Python}
+    }
+	\entry
+		{2013-Now}
+		{Odoo Connector}
+		{\href{https://odoo-connector.com}{odoo-connector.com}}
+		{An Odoo addon that is a powerful framework to build connectors between Odoo
+and other platforms. More than 40 contributors joined me on this. Used for many
+services that I authored (Magento, Jira) or other contributors authored
+(Prestashop, WooCommerce, SFTP, Salesforce, ...).\\
+      \texttt{Odoo}\slashsep\texttt{Python}
+    }
+	\entry
+		{2016-Now}
+		{Docker Odoo Projects}
+		{\href{https://github.com/camptocamp/docker-odoo-project}{github.com/camptocamp/docker-odoo-project}}
+		{Base Docker image to run Odoo projects with batteries.\\
+      \texttt{Odoo}\slashsep\texttt{Docker}
+    }
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2005}
+		{Advanced Federal Diploma of Higher Education in Information Technology}
+		{CPNV}
+		{Web / Software development Option}
+	\entry
+		{2003}
+		{Information Technologist, Federal Diploma of Vocational Education and Training}
+		{CPNV}
+		{}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	
+	\textbf{French} - native\\
+	\textbf{English} - proficient\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	
+  Music, Bass guitar, Reading, Photography, Walks, Learning new technologies, ...
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Talks}
+
+  {A Jobs Queue for processing tasks asynchronously}:\\
+  {\href{https://guewen.github.io/odoo-2015-connector-queue-job/#1}{guewen.github.io/odoo-2015-connector-queue-job/\#1}}
+
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
