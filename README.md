@@ -4,7 +4,9 @@ This repository contains my resume in LaTeX.
 
 # Build
 
-TODO
+```
+make pdf
+```
 
 ## Requirements
 
