@@ -10,7 +10,6 @@ frenchcv: GuewenBaconnier_fr.pdf
 englishcv: GuewenBaconnier_en.pdf
 
 %.pdf: %.tex
-	# xelatex -interaction=batchmode $<
 	pdflatex $<
 
 clean:
